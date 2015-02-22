@@ -106,19 +106,19 @@ public class MD5Sum
 
 	
 	public static void findFiles(String dirPath) {
-        File dir = new File(dirPath);
-        File[] firstLevelFiles = dir.listFiles();
-        if (firstLevelFiles != null && firstLevelFiles.length > 0) {
-            for (File aFile : firstLevelFiles) {
-                if (aFile.isDirectory()) {
-                	allDirs.add(aFile.getAbsolutePath().toString());
-                	findFiles(aFile.getAbsolutePath());
-                } else {
-                	allFiles.add(aFile.getAbsolutePath().toString());
-                }
-            }
-        }
-    }
+        	File dir = new File(dirPath);
+        	File[] firstLevelFiles = dir.listFiles();
+		if (firstLevelFiles != null && firstLevelFiles.length > 0) {
+            		for (File aFile : firstLevelFiles) {
+                		if (aFile.isDirectory()) {
+                			allDirs.add(aFile.getAbsolutePath().toString());
+                			findFiles(aFile.getAbsolutePath());
+                		} else {
+                			allFiles.add(aFile.getAbsolutePath().toString());
+                		}
+            		}
+        	}
+    	}
 	
     public static void main(String[] args) throws NoSuchAlgorithmException, IOException,Exception {
     	if(args.length == 0)
