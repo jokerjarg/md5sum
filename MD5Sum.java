@@ -15,7 +15,7 @@ import java.util.List;
 
 /*
  * 
- * coded by : www.jokersec.com
+ * coded by : www.meonsecurity.com
  * simple md5 checksum generator and checker
  * LineAL
  * 
